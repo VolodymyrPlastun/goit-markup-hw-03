@@ -22,6 +22,7 @@
     <title>Студия</title>
   </head>
   <body>
+    <!-- header -->
     <header class="page-header">
       <div class="container main-nav">
         <nav class="left-nav">
@@ -41,10 +42,13 @@
       </div>
     </header>
     <main>
+      <!-- hero -->
       <section class="hero">
+        <!-- <div class="container"> -->
         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
         <button class="hero-button" type="button">Заказать услугу</button>
       </section>
+      <!-- Наши преимущества -->
       <section class="section">
         <div class="container">
           <h2 class="section-title visually-hidden">Наши преимущества</h2>
@@ -74,56 +78,75 @@
           </ul>
         </div>
       </section>
+      <!-- Чем мы занимаемся -->
       <section class="section">
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="section-img list">
             <li class="section-item">
-              <img class="picture" src="./images/box1.jpg" alt="Работа за компьютером" width="370" />
+              <img
+                class="picture"
+                src="./images/box1.jpg"
+                alt="Работа за компьютером"
+                width="370"
+              />
             </li>
             <li class="section-item">
               <img class="picture" src="./images/box2.jpg" alt="Работа с телефоном" width="370" />
             </li>
-            <img class="picture" src="./images/box3.jpg" alt="Работа с планшетом" width="370" />
+            <li class="section-item">
+              <img class="picture" src="./images/box3.jpg" alt="Работа с планшетом" width="370" />
             </li>
           </ul>
         </div>
       </section>
+      <!-- Наша команда -->
       <section class="section-team">
         <div class="container">
           <h2 class="section-title subject">Наша команда</h2>
           <ul class="section-desc list">
             <li class="item">
               <img class="picture" src="./images/ihor.jpg" alt="Игорь Демьяненко" width="270" />
-              <h3 class="section-header">Игорь Демьяненко</h3>
-              <p class="text" lang="en">Product Designer</p>
+              <div class="team-desc">
+                <h3 class="section-header">Игорь Демьяненко</h3>
+                <p class="text" lang="en">Product Designer</p>
+              </div>
             </li>
             <li class="item">
               <img class="picture" src="./images/olha.jpg" alt="Ольга Репина" width="270" />
-              <h3 class="section-header">Ольга Репина</h3>
-              <p class="text" lang="en">Frontend Developer</p>
+              <div class="team-desc">
+                <h3 class="section-header">Ольга Репина</h3>
+                <p class="text" lang="en">Frontend Developer</p>
+              </div>
             </li>
             <li class="item">
               <img class="picture" src="./images/nikolai.jpg" alt="Николай Тарасов" width="270" />
-              <h3 class="section-header">Николай Тарасов</h3>
-              <p class="text" lang="en">Marketing</p>
+              <div class="team-desc">
+                <h3 class="section-header">Николай Тарасов</h3>
+                <p class="text" lang="en">Marketing</p>
+              </div>
             </li>
             <li class="item">
               <img class="picture" src="./images/mihail.jpg" alt="Михаил Ермаков" width="270" />
-              <h3 class="section-header">Михаил Ермаков</h3>
-              <p class="text" lang="en">UI Designer</p>
+              <div class="team-desc">
+                <h3 class="section-header">Михаил Ермаков</h3>
+                <p class="text" lang="en">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
       </section>
     </main>
+    <!-- footer -->
     <footer>
       <section class="footer">
         <div class="container">
           <a class="logo link" href="./index.html">Web<span class="logo-white">Studio</span></a>
           <address class="adress">
             <ul class="adress-info list">
-              <li class="item-text">г. Киев, пр-т Леси Украинки, 26</li>
+              <li class="item">
+                <a class="link adress-link" href="#">г. Киев, пр-т Леси Украинки, 26</a>
+              </li>
               <li class="item">
                 <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
               </li>

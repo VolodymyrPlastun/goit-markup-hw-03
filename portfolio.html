@@ -21,23 +21,26 @@
     <title>Портфолио</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <a class="logo link" href="./index.html">Web<span class="logo-dark">Studio</span></a>
-        <ul class="site-nav list">
-          <li class="item"><a class="link" href="./index.html">Студия</a></li>
-          <li class="item"><a class="link current" href="./portfolio.html">Портфолио</a></li>
-          <li class="item"><a class="link" href="/">Контакты</a></li>
+    <header class="page-header">
+      <div class="container main-nav">
+        <nav class="left-nav">
+          <a class="logo link" href="./index.html">Web<span class="logo-dark">Studio</span></a>
+          <ul class="site-nav list">
+            <li class="item"><a class="link" href="./index.html">Студия</a></li>
+            <li class="item"><a class="link current" href="./portfolio.html">Портфолио</a></li>
+            <li class="item"><a class="link" href="/">Контакты</a></li>
+          </ul>
+        </nav>
+        <ul class="contacts-nav list">
+          <li class="item">
+            <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li class="item"><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
-      </nav>
-      <ul class="contacts-nav list">
-        <li class="item">
-          <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-        </li>
-        <li class="item"><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-      </ul>
+      </div>
     </header>
     <main>
+      <!-- Фильтр наших работ -->
       <section class="section">
         <div class="container">
           <h1 class="filter-title visually-hidden">Фильтр наших работ</h1>
@@ -54,31 +57,42 @@
               <button class="filter-button" type="button">Маркетинг</button>
             </li>
           </ul>
+          <!-- Примеры работ -->
           <ul class="section-items list">
             <li class="section-item">
               <img src="./images/pimg1.jpg" alt="Страница веб-сайта" width="370" />
-              <h2 class="subtitle">Технокряк</h2>
-              <p class="text">Веб-сайт</p>
+              <div class="examples">
+                <h2 class="subtitle">Технокряк</h2>
+                <p class="text">Веб-сайт</p>
+              </div>
             </li>
             <li class="section-item">
               <img src="./images/pimg2.jpg" alt="Постер New Orlean vs Golden Star" width="370" />
-              <h2 class="subtitle">Постер New Orlean vs Golden Star</h2>
-              <p class="text">Дизайн</p>
+              <div class="examples">
+                <h2 class="subtitle">Постер New Orlean vs Golden Star</h2>
+                <p class="text">Дизайн</p>
+              </div>
             </li>
             <li class="section-item">
               <img src="./images/pimg3.jpg" alt="Ресторан Seafood" width="370" />
-              <h2 class="subtitle">Ресторан Seafood</h2>
-              <p class="text">Приложение</p>
+              <div class="examples">
+                <h2 class="subtitle">Ресторан Seafood</h2>
+                <p class="text">Приложение</p>
+              </div>
             </li>
             <li class="section-item">
               <img src="./images/pimg4.jpg" alt="Наушники" width="370" />
-              <h2 class="subtitle">Проект Prime</h2>
-              <p class="text">Дизайн</p>
+              <div class="examples">
+                <h2 class="subtitle">Проект Prime</h2>
+                <p class="text">Дизайн</p>
+              </div>
             </li>
             <li class="section-item">
               <img src="./images/pimg5.jpg" alt="Белая и коричневая коробки" width="370" />
-              <h2 class="subtitle">Проект Boxes</h2>
-              <p class="text">Приложение</p>
+              <div class="examples">
+                <h2 class="subtitle">Проект Boxes</h2>
+                <p class="text">Приложение</p>
+              </div>
             </li>
             <li class="section-item">
               <img
@@ -86,18 +100,24 @@
                 alt="Страница сайта Inspiration has no Borders"
                 width="370"
               />
-              <h2 class="subtitle">Inspiration has no Borders</h2>
-              <p class="text">Веб-сайт</p>
+              <div class="examples">
+                <h2 class="subtitle">Inspiration has no Borders</h2>
+                <p class="text">Веб-сайт</p>
+              </div>
             </li>
             <li class="section-item">
               <img src="./images/pimg7.jpg" alt="Открытый журнал" width="370" />
-              <h2 class="subtitle">Издание Limited Edition</h2>
-              <p class="text">Дизайн</p>
+              <div class="examples">
+                <h2 class="subtitle">Издание Limited Edition</h2>
+                <p class="text">Дизайн</p>
+              </div>
             </li>
             <li class="section-item">
               <img src="./images/pimg8.jpg" alt="Брелок с надписью LAB EL TAG" width="370" />
-              <h2 class="subtitle">Проект LAB</h2>
-              <p class="text">Маркетинг</p>
+              <div class="examples">
+                <h2 class="subtitle">Проект LAB</h2>
+                <p class="text">Маркетинг</p>
+              </div>
             </li>
             <li class="section-item">
               <img
@@ -105,8 +125,10 @@
                 alt="Открытый ноутбук со страницей Growing Business"
                 width="370"
               />
-              <h2 class="subtitle">Growing Business</h2>
-              <p class="text">Приложение</p>
+              <div class="examples">
+                <h2 class="subtitle">Growing Business</h2>
+                <p class="text">Приложение</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -114,16 +136,20 @@
     </main>
     <footer>
       <section class="footer">
-        <a class="logo link" href="./index.html">Web<span class="logo-white">Studio</span></a>
-        <address class="adress">
-          <ul class="adress-info list">
-            <li class="item-text">г. Киев, пр-т Леси Украинки, 26</li>
-            <li class="item">
-              <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            </li>
-            <li class="item"><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-          </ul>
-        </address>
+        <div class="container">
+          <a class="logo link" href="./index.html">Web<span class="logo-white">Studio</span></a>
+          <address class="adress">
+            <ul class="adress-info list">
+              <li class="item">
+                <a class="link adress-link" href="#">г. Киев, пр-т Леси Украинки, 26</a>
+              </li>
+              <li class="item">
+                <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              </li>
+              <li class="item"><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            </ul>
+          </address>
+        </div>
       </section>
     </footer>
   </body>
